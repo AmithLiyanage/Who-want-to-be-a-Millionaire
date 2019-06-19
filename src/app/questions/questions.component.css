@@ -14,6 +14,14 @@
   color: aquamarine;
 }
 
+.btnGreen{
+  background: green !important
+}
+
+.btnError{
+  background: yellow !important
+}
+
 #btn1:focus, #btn2:focus, #btn3:focus, #btn4:focus {
   outline: 0px;
 }
