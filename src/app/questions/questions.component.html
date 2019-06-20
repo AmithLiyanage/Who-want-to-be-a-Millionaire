@@ -2,21 +2,34 @@
   <div class="p">
     <img width="400" alt="Angular Logo" src="../assets/logo.png">
   </div>
-  <h2>{{question.question}}</h2>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-9"></div>
+    <div class="col-md-3"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-"></div>
+    <div class="col-*-*"></div>
+    <div class="col-*-*"></div>
+  </div>
+</div>
+
+  <h3>{{question.question}}</h3>
   <body>
     <div>
       <div class="buttons">
           <button id="btn1" (click)="checkAnswer(1)" [ngClass]="answerClasses[1]">{{question.answers[1].answer}}</button>
-          <button id="btn2" (click)="checkAnswer(2)" [ngClass]="answerClasses[2]">B</button>
+          <button id="btn2" (click)="checkAnswer(2)" [ngClass]="answerClasses[2]">{{question.answers[2].answer}}</button>
         </div>
         <div>
-          <button id="btn3" (click)="checkAnswer(3)" [ngClass]="answerClasses[3]">C</button>
-          <button id="btn4" (click)="checkAnswer(4)" [ngClass]="answerClasses[4]">D</button>
+          <button id="btn3" (click)="checkAnswer(3)" [ngClass]="answerClasses[3]">{{question.answers[3].answer}}</button>
+          <button id="btn4" (click)="checkAnswer(4)" [ngClass]="answerClasses[4]">{{question.answers[4].answer}}</button>
         </div>
     </div>
     <div>
       <br><br>
-      <button (click)="gotonext()">Next Question</button>
+      <button id="btnNext" (click)="goToNext()">Next Question</button>
     </div>
   </body>
 </div>

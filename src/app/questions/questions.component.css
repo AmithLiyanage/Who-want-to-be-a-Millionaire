@@ -1,7 +1,9 @@
 .bg {
-  background-color: rgba(119, 0, 255, 1);
+  background-color:  rgb(1, 2, 51);
   background-size: 100%;
   height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
 }
 
 #btn1, #btn2, #btn3, #btn4 {
@@ -20,13 +22,28 @@
   color: aquamarine;
 }
 
+#btnNext {
+  background-color: rgb(245, 143, 9);
+  width: 250px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  border: 1px solid #1d3a6d;
+  border-radius: 50px;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+}
+
+#btnNext:hover {
+  cursor: pointer;
+  color: blueviolet;
+}
 
 .btnGreen{
-  background: green !important
+  background: rgb(1, 104, 56) !important;
 }
 
 .btnError{
-  background: yellow !important
+  background: rgb(128, 3, 9)!important;
 }
 
 #btn1:focus, #btn2:focus, #btn3:focus, #btn4:focus {

@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { StartComponent } from './start/start.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { MainViewComponent } from './main-view/main-view.component';
+//import { SweetAlertService } from 'angular-sweetalert-service';
 
 const routes: Routes = [
   {path: 'start', component: StartComponent},
@@ -11,7 +12,16 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forRoot(routes)
+  ],
+
+  providers: [
+    // SweetAlertService,
+  ],
+
+  exports: [
+    RouterModule
+  ]
 })
 export class AppRoutingModule { }
