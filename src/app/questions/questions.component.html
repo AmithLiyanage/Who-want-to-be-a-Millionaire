@@ -1,35 +1,35 @@
 <div class="bg" style="text-align: center">
-  <div class="p">
-    <img width="400" alt="Angular Logo" src="../assets/logo.png">
-  </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-9"></div>
-    <div class="col-md-3"></div>
-  </div>
-  <div class="row">
-    <div class="col-md-"></div>
-    <div class="col-*-*"></div>
-    <div class="col-*-*"></div>
-  </div>
-</div>
-
-  <h3>{{question.question}}</h3>
-  <body>
-    <div>
-      <div class="buttons">
-          <button id="btn1" (click)="checkAnswer(1)" [ngClass]="answerClasses[1]">{{question.answers[1].answer}}</button>
-          <button id="btn2" (click)="checkAnswer(2)" [ngClass]="answerClasses[2]">{{question.answers[2].answer}}</button>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+          <div class="p">
+            <img width="400" alt="Angular Logo" src="../assets/logo.png">
+          </div>
+          <h3>{{question.question}}</h3>
+          <div class="buttons">
+              <button id="btn1" (click)="checkAnswer(1)" [ngClass]="answerClasses[1]">{{question.answers[1].answer}}</button>
+              <button id="btn2" (click)="checkAnswer(2)" [ngClass]="answerClasses[2]">{{question.answers[2].answer}}</button>
+            </div>
+            <div>
+              <button id="btn3" (click)="checkAnswer(3)" [ngClass]="answerClasses[3]">{{question.answers[3].answer}}</button>
+              <button id="btn4" (click)="checkAnswer(4)" [ngClass]="answerClasses[4]">{{question.answers[4].answer}}</button>
+            </div>
+          <div>
         </div>
         <div>
-          <button id="btn3" (click)="checkAnswer(3)" [ngClass]="answerClasses[3]">{{question.answers[3].answer}}</button>
-          <button id="btn4" (click)="checkAnswer(4)" [ngClass]="answerClasses[4]">{{question.answers[4].answer}}</button>
+          <br><br>
+          <button id="btnNext" (click)="goToNext()">Next Question</button>
         </div>
+        </div>
+        <div class="col-md-2" style="margin: auto">
+          <span [ngClass]="prizeColor[5]">$ 2,000</span> <br><br>
+          <span [ngClass]="prizeColor[4]">$ 1,000 </span><br><br>
+          <span [ngClass]="prizeColor[3]">$ 500</span> <br><br>
+          <span [ngClass]="prizeColor[2]">$ 300 </span><br><br>
+          <span [ngClass]="prizeColor[1]">$ 100 </span><br><br>
+        </div>
+      </div>
     </div>
-    <div>
-      <br><br>
-      <button id="btnNext" (click)="goToNext()">Next Question</button>
-    </div>
-  </body>
+
 </div>

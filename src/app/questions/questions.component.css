@@ -49,3 +49,11 @@
 #btn1:focus, #btn2:focus, #btn3:focus, #btn4:focus {
   outline: 0px;
 }
+
+.white {
+  color: white;
+}
+
+.orange {
+  color: orangered;
+}

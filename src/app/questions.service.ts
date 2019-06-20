@@ -8,7 +8,7 @@ export class QuestionsService {
   questions = {
     1: {
       question: '1. Someone who strongly asserts a position is often said to be "putting his" what down?',
-      price: '$ 100',
+      color: 'white',
       correct: 2,
       answers: {
         1: {
@@ -27,7 +27,7 @@ export class QuestionsService {
     },
     2: {
       question: '2. Which of these sports usually takes place on a surface known as an alley?',
-      price: '$ 300',
+      color: 'white',
       correct: 1,
       answers: {
         1: {
@@ -46,7 +46,7 @@ export class QuestionsService {
     },
     3: {
       question: '3. The word "grand" is slang for what amount of money?',
-      price: '$ 500',
+      color: 'white',
       correct: 3,
       answers: {
         1: {
@@ -65,7 +65,7 @@ export class QuestionsService {
     },
     4: {
       question: '4. A cranky person is said to have gotten up "on the wrong side of the" what?',
-      price: '$ 1000',
+      color: 'white',
       correct: 1,
       answers: {
         1: {
@@ -84,7 +84,7 @@ export class QuestionsService {
     },
     5: {
       question: '5. Someone who is flexible is often said to be able to "roll with the" what?',
-      price: '$ 2000',
+      color: 'white',
       correct: 4,
       answers: {
         1: {
